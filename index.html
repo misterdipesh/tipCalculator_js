@@ -9,25 +9,29 @@
         <div>
 
             <div id="mainPanel">
-                 <h3>Tip Calculator</h3>
-                <label>Enter the bill amount?</label><br>
-                <input id="billAmount" type="number"><br>
-                <label>Enter the size of your group?</label><br>
-                <input id="peopleSize" type="number"><br>
-                <label for="service">How was the service:</label>
-                <select id="service" name="cars" size="3">
-                  <option value="20">best</option>
-                  <option value="10">good</option>
-                  <option value="5">satisfied</option>
-                  <option value="2">bad</option>
-                </select><br>
-                <button id="calcBtn" onclick="calculateTip()">Calculate</button>
-                <br>
-                <h3>Calculated Tip:</h3>
-                    <div id="calculatedResult">
+                 <h3 id="header">Tip Calculator</h3>
+                <form>
+                    <label class="labels">Enter the bill amount?</label><br>
+                    <input id="billAmount" class="inputs" type="number" required="True" min="1"><br>
+                    <label class="labels">Enter the size of your group?</label><br>
+                    <input id="peopleSize" class="inputs" type="number" required="True" min="1"><br>
+                    <label class="labels" for="service">How was the service:</label><br>
+                    <select class="inputs" id="service" name="services" required >
+                      <option value="20" select="selected">best</option>
+                      <option value="10">good</option>
+                      <option value="5">satisfied</option>
+                      <option value="2">bad</option>
+                    </select><br>
+                    <button id="calcBtn" onclick="calculateTip()">Calculate</button>
+                    <br>
+                    <h3 id="header">Calculated Tip:</h3>
+                </form>
+                <div id="calculatedResult">
 
-                    </div>
+                </div>
             </div>
+
+
 
 
 
