@@ -7,8 +7,9 @@
     </head>
     <body>
         <div>
-            <h1>Tip Calculator</h1>
-            <div>
+
+            <div id="mainPanel">
+                 <h3>Tip Calculator</h3>
                 <label>Enter the bill amount?</label><br>
                 <input id="billAmount" type="number"><br>
                 <label>Enter the size of your group?</label><br>
@@ -21,10 +22,14 @@
                   <option value="2">bad</option>
                 </select><br>
                 <button id="calcBtn" onclick="calculateTip()">Calculate</button>
-            </div>
-            <div id="calculatedResult">
+                <br>
+                <h3>Calculated Tip:</h3>
+                    <div id="calculatedResult">
 
+                    </div>
             </div>
+
+
 
         </div>
 
